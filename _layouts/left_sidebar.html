@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="grid-30 left-sidebar">
+  <h3>On this page</h3>
+
+  <ul>
+    {% for link_hash in page.links %}
+      {% for link in link_hash %}
+        <li><a href="{{ link[1] }}">{{ link[0] }}</a></li>
+      {% endfor %}
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="push-5">
+</div>
+
+<div class="grid-65">
+  {{ content }}
+</div>
