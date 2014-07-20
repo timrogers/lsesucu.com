@@ -6,10 +6,6 @@ body {
 /* Used for some widgets - they all need a bit of spacing around them. */
 iframe {
   margin: 2em auto;
-  text-align: center;
-}
-.widget-wrapper {
-  margin: auto;
 }
 #title h2 {
   text-align: center;
