@@ -1,4 +1,5 @@
 @red: #8a0404;
+@roboto: 'Roboto Slab', serif;
 
 body {
   background-image: url('/images/bg.png');
@@ -6,11 +7,26 @@ body {
   margin: 0;
 }
 
+/* Used for some widgets - they all need a bit of spacing around them. */
+iframe {
+  margin: 2em auto;
+  text-align: center;
+}
+
+.widget-wrapper {
+  margin: auto;
+}
+
 #title {
   h2 {
     text-align: center;
     font-size: 2em;
   }
+}
+
+h3 {
+  color: @red;
+  font-family: @roboto;
 }
 
 .container {
@@ -31,6 +47,9 @@ body {
         width: 70%;
         margin: 1em auto;
         text-align: center;
+        font-family: @roboto;
+        font-size: 2em;
+        color: @red;
       }
     }
   }
@@ -66,8 +85,10 @@ body {
   }
 
   .left-sidebar {
+    margin: 2em 0;
+
     h3 {
-      margin: 0 0 1em 0;
+      margin: 1em 0;
       text-transform: uppercase;
       font-family: 'Roboto Slab', serif;
     }
@@ -75,8 +96,56 @@ body {
     ul {
       list-style-type: none;
 
+      li { margin: 1em auto; }
+
       a {
         color: inherit;
+      }
+    }
+  }
+
+  .content {
+    a h3 {
+      margin: 0;
+      font-family: @roboto;
+      text-decoration: none;
+      color: @red;
+    }
+
+    a { color: #000; }
+
+    img {
+      width: 100%;
+      margin: 1em auto;
+      text-align: center;
+
+      &.no-stretch {
+        width: auto;
+      }
+    }
+
+    .churches {
+      margin: auto;
+      width: 60%;
+      a { margin: auto; text-align: center; }
+    }
+
+    .committee {
+      margin: 2em 0;
+
+      .person {
+        clear: both;
+
+        img {
+          float: left;
+          margin: 0 2em 2em 0;
+          width: 150px;
+        }
+
+        p { 
+          float: left;
+          line-height: 1.5em;
+        }
       }
     }
   }

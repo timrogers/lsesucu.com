@@ -3,9 +3,21 @@ body {
   font-family: "Helvetica", sans-serif;
   margin: 0;
 }
+/* Used for some widgets - they all need a bit of spacing around them. */
+iframe {
+  margin: 2em auto;
+  text-align: center;
+}
+.widget-wrapper {
+  margin: auto;
+}
 #title h2 {
   text-align: center;
   font-size: 2em;
+}
+h3 {
+  color: #8a0404;
+  font-family: 'Roboto Slab', serif;
 }
 .container {
   width: 100%;
@@ -24,6 +36,9 @@ body {
   width: 70%;
   margin: 1em auto;
   text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2em;
+  color: #8a0404;
 }
 .container ul.nav {
   background-color: #8a0404;
@@ -48,16 +63,62 @@ body {
   text-transform: uppercase;
   font-family: 'Roboto Slab', serif;
 }
+.container .left-sidebar {
+  margin: 2em 0;
+}
 .container .left-sidebar h3 {
-  margin: 0 0 1em 0;
+  margin: 1em 0;
   text-transform: uppercase;
   font-family: 'Roboto Slab', serif;
 }
 .container .left-sidebar ul {
   list-style-type: none;
 }
+.container .left-sidebar ul li {
+  margin: 1em auto;
+}
 .container .left-sidebar ul a {
   color: inherit;
+}
+.container .content a h3 {
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+  text-decoration: none;
+  color: #8a0404;
+}
+.container .content a {
+  color: #000;
+}
+.container .content img {
+  width: 100%;
+  margin: 1em auto;
+  text-align: center;
+}
+.container .content img.no-stretch {
+  width: auto;
+}
+.container .content .churches {
+  margin: auto;
+  width: 60%;
+}
+.container .content .churches a {
+  margin: auto;
+  text-align: center;
+}
+.container .content .committee {
+  margin: 2em 0;
+}
+.container .content .committee .person {
+  clear: both;
+}
+.container .content .committee .person img {
+  float: left;
+  margin: 0 2em 2em 0;
+  width: 150px;
+}
+.container .content .committee .person p {
+  float: left;
+  line-height: 1.5em;
 }
 .container .flexslider {
   margin: 2em 1em;
