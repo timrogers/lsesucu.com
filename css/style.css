@@ -1,6 +1,6 @@
 body {
   background-image: url('/images/bg.png');
-  font-family: "Helvetica", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
 }
 /* Used for some widgets - they all need a bit of spacing around them. */
@@ -13,7 +13,7 @@ iframe {
 }
 h3 {
   color: #8a0404;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .container {
   width: 100%;
@@ -57,7 +57,7 @@ h3 {
   color: #8a0404;
   margin: 0.3em 0;
   text-transform: uppercase;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .container .left-sidebar {
   margin: 2em 0;
@@ -65,7 +65,7 @@ h3 {
 .container .left-sidebar h3 {
   margin: 1em 0;
   text-transform: uppercase;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .container .left-sidebar ul {
   list-style-type: none;
@@ -78,7 +78,7 @@ h3 {
 }
 .container .content a h3 {
   margin: 0;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
   color: #8a0404;
 }
@@ -94,12 +94,16 @@ h3 {
   width: auto;
 }
 .container .content .churches {
-  margin: auto;
-  width: 60%;
+  width: 100%;
+  display: block;
 }
-.container .content .churches a {
-  margin: auto;
-  text-align: center;
+.container .content .churches .church {
+  width: 28%;
+  float: left;
+  margin: 1em 0.5em;
+}
+.container .content .churches .church:nth-child(3) {
+  clear: right;
 }
 .container .content .committee {
   margin: 2em 0;

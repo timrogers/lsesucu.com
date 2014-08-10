@@ -1,9 +1,10 @@
 @red: #8a0404;
 @roboto: 'Roboto Slab', serif;
+@open-sans: 'Open Sans', sans-serif;
 
 body {
   background-image: url('/images/bg.png');
-  font-family: "Helvetica", sans-serif;
+  font-family: @open-sans;
   margin: 0;
 }
 
@@ -22,7 +23,7 @@ iframe {
 
 h3 {
   color: @red;
-  font-family: @roboto;
+  font-family: @open-sans;
 }
 
 .container {
@@ -76,7 +77,7 @@ h3 {
       color: @red;
       margin: 0.3em 0;
       text-transform: uppercase;
-      font-family: 'Roboto Slab', serif;
+      font-family: @open-sans;
     }
   }
 
@@ -86,7 +87,7 @@ h3 {
     h3 {
       margin: 1em 0;
       text-transform: uppercase;
-      font-family: 'Roboto Slab', serif;
+      font-family: @open-sans;
     }
 
     ul {
@@ -103,7 +104,7 @@ h3 {
   .content {
     a h3 {
       margin: 0;
-      font-family: @roboto;
+      font-family: @open-sans;
       text-decoration: none;
       color: @red;
     }
@@ -121,9 +122,18 @@ h3 {
     }
 
     .churches {
-      margin: auto;
-      width: 60%;
-      a { margin: auto; text-align: center; }
+      width: 100%;
+      display: block;
+
+      .church {
+        width: 28%;
+        float: left;
+        margin: 1em 0.5em;
+
+        &:nth-child(3) {
+          clear: right;
+        }
+      }
     }
 
     .committee {
